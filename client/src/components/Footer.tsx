@@ -18,7 +18,7 @@ const Footer = () => {
           </nav>
           
           <div>
-            <p>&copy; {new Date().getFullYear()} ALASSIRI. All Rights Reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Mohammad A. Alassiri. All Rights Reserved.</p>
           </div>
         </div>
       </div>
