@@ -7,28 +7,51 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="order-2 md:order-1">
             <p className="text-lg mb-6">
-              Hi, I'm <strong>Mohammad A. Alassiri</strong> — a passionate full-stack developer and operations strategist blending technology with business insight. I specialize in building scalable apps, managing high-performance tech teams, and delivering powerful digital tools from idea to deployment.
+              Hi, I'm <strong>Mohammad A. Alassiri</strong> — a versatile and innovative Full-Stack Developer with a proven track record of building high-performance web applications. I specialize in modern tech stacks like React, TypeScript, Node.js, Express, and PostgreSQL.
             </p>
             <p className="text-lg mb-6">
-              I've worked across diverse roles from operations management in large-scale events to hands-on software development with modern web stacks. Whether it's a POS system for a bookstore or an AI-powered assistant for freelancers, I bring clarity, structure, and smart execution to every project.
+              As an Operations Manager at Lenador Systems, I've led technical support teams for large-scale events while developing my expertise in software engineering. I blend technical depth with clean architecture and have created 10+ live demo applications spanning real-world use cases.
             </p>
             <p className="text-lg mb-8">
-              I'm currently focusing on cloud-native deployments, developer tooling, and launching automated digital businesses.
+              Currently exploring cloud automation, AI integration, and DeFi trading technologies to build intelligent, scalable systems.
             </p>
-            <a href="#" className="px-8 py-3 bg-black text-white font-bold inline-block hover:bg-gray-800 transition-colors">DOWNLOAD CV</a>
+            <a href="/assets/cv_placeholder.txt" download="Mohammad_Alassiri_CV.pdf" className="px-8 py-3 bg-black text-white font-bold inline-block hover:bg-gray-800 transition-colors">DOWNLOAD CV</a>
           </div>
           <div className="order-1 md:order-2 grid grid-cols-2 gap-4">
-            <div className="bg-accent aspect-square flex items-center justify-center p-4">
-              <p className="font-bold text-center">EDUCATION</p>
+            <div className="bg-accent aspect-square flex flex-col items-center justify-center p-4">
+              <p className="font-bold text-center mb-2">EDUCATION</p>
+              <ul className="text-sm text-center">
+                <li>Knowledge Engineering</li>
+                <li>Maastricht University</li>
+                <li>Business Administration</li>
+                <li>Tourism Management</li>
+              </ul>
             </div>
-            <div className="bg-accent aspect-square flex items-center justify-center p-4">
-              <p className="font-bold text-center">EXPERIENCE</p>
+            <div className="bg-accent aspect-square flex flex-col items-center justify-center p-4">
+              <p className="font-bold text-center mb-2">EXPERIENCE</p>
+              <ul className="text-sm text-center">
+                <li>Operations Manager</li>
+                <li>Full-Stack Developer</li>
+                <li>5+ Years Professional</li>
+                <li>10+ Demo Applications</li>
+              </ul>
             </div>
-            <div className="bg-accent aspect-square flex items-center justify-center p-4">
-              <p className="font-bold text-center">SKILLS</p>
+            <div className="bg-accent aspect-square flex flex-col items-center justify-center p-4">
+              <p className="font-bold text-center mb-2">LANGUAGES</p>
+              <ul className="text-sm text-center">
+                <li>English — Fluent</li>
+                <li>Arabic — Native</li>
+                <li>Dutch — Conversational</li>
+              </ul>
             </div>
-            <div className="bg-accent aspect-square flex items-center justify-center p-4">
-              <p className="font-bold text-center">INTERESTS</p>
+            <div className="bg-accent aspect-square flex flex-col items-center justify-center p-4">
+              <p className="font-bold text-center mb-2">INTERESTS</p>
+              <ul className="text-sm text-center">
+                <li>AI Agents</li>
+                <li>Cloud Automation</li>
+                <li>DeFi Trading Bots</li>
+                <li>Business & Startups</li>
+              </ul>
             </div>
           </div>
         </div>
