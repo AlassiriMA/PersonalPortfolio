@@ -15,7 +15,16 @@ const AboutSection = () => {
             <p className="text-lg mb-8">
               Currently exploring cloud automation, AI integration, and DeFi trading technologies to build intelligent, scalable systems.
             </p>
-            <a href="/assets/alassiri_cv.pdf" download="Mohammad_Alassiri_CV.pdf" className="px-8 py-3 bg-black text-white font-bold inline-block hover:bg-gray-800 transition-colors">DOWNLOAD CV</a>
+            <a 
+              href="/assets/alassiri_cv_apr_25.pdf" 
+              download="Mohammad_Alassiri_CV.pdf" 
+              className="px-8 py-3 bg-black text-white font-bold inline-flex items-center gap-2 hover:bg-gray-800 transition-all transform hover:-translate-y-1 duration-300 shadow-[0_4px_14px_0_rgba(220,38,38,0.39)] hover:shadow-[0_6px_20px_rgba(220,38,38,0.23)]"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              DOWNLOAD CV
+            </a>
           </div>
           <div className="order-1 md:order-2 grid grid-cols-2 gap-4">
             <div className="bg-accent aspect-square flex flex-col items-center justify-center p-4">

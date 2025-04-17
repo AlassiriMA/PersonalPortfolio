@@ -65,7 +65,7 @@ const SkillsSection = () => {
                       skill.level === 3.5 ? 'w-14' :
                       skill.level === 3 ? 'w-12' :
                       skill.level === 2.5 ? 'w-10' : 'w-8'
-                    } h-2 bg-black`}
+                    } h-2 bg-gradient-to-r from-black via-blue-600 to-black hover:via-indigo-500 transition-all duration-500`}
                   ></div>
                 </li>
               ))}
@@ -85,7 +85,7 @@ const SkillsSection = () => {
                       skill.level === 3.5 ? 'w-14' :
                       skill.level === 3 ? 'w-12' :
                       skill.level === 2.5 ? 'w-10' : 'w-8'
-                    } h-2 bg-black`}
+                    } h-2 bg-gradient-to-r from-black via-purple-600 to-black hover:via-purple-500 transition-all duration-500`}
                   ></div>
                 </li>
               ))}
@@ -107,7 +107,7 @@ const SkillsSection = () => {
                       skill.level === 3.5 ? 'w-14' :
                       skill.level === 3 ? 'w-12' :
                       skill.level === 2.5 ? 'w-10' : 'w-8'
-                    } h-2 bg-black`}
+                    } h-2 bg-gradient-to-r from-black via-emerald-600 to-black hover:via-emerald-500 transition-all duration-500`}
                   ></div>
                 </li>
               ))}
@@ -127,7 +127,7 @@ const SkillsSection = () => {
                       skill.level === 3.5 ? 'w-14' :
                       skill.level === 3 ? 'w-12' :
                       skill.level === 2.5 ? 'w-10' : 'w-8'
-                    } h-2 bg-black`}
+                    } h-2 bg-gradient-to-r from-black via-amber-600 to-black hover:via-amber-500 transition-all duration-500`}
                   ></div>
                 </li>
               ))}
