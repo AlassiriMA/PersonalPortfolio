@@ -56,19 +56,33 @@ const ProjectsSection = () => {
         <div className="grid md:grid-cols-2 gap-10">
           {projects.map((project, index) => (
             <div key={index} className="group bg-white border-4 border-black overflow-hidden shadow-xl transform transition-all duration-300 hover:-translate-y-2">
-              <div className="aspect-video bg-black flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent to-accent/50 opacity-80 z-10"></div>
-                <div className="z-20 p-6 text-black">
-                  <div className="font-mono text-xs mb-2 bg-white px-2 py-1 rounded-sm inline-block border-2 border-black">FEATURED PROJECT</div>
-                  <h3 className="text-4xl font-bold mb-2 text-white">{project.title.replace(/^[📚🍏📈🤖]\s/, '')}</h3>
-                </div>
+              <div className="aspect-video relative overflow-hidden">
+                <img 
+                  src={`/assets/project${index + 1}.svg`} 
+                  alt={project.imageAlt} 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-0 right-0 bg-gradient-to-r from-red-500 to-orange-500 text-white px-3 py-1 font-bold text-xs transform rotate-0 origin-top-right shadow-lg">FEATURED PROJECT</div>
               </div>
               <div className="p-8">
                 <p className="mb-6 text-lg">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {project.tags.map((tag, tagIndex) => (
-                    <span key={tagIndex} className="px-3 py-1 bg-black text-white font-bold text-sm">{tag}</span>
-                  ))}
+                  {project.tags.map((tag, tagIndex) => {
+                    const tagColors = [
+                      "bg-blue-600", 
+                      "bg-purple-600", 
+                      "bg-emerald-600",
+                      "bg-amber-600"
+                    ];
+                    return (
+                      <span 
+                        key={tagIndex} 
+                        className={`px-3 py-1 ${tagColors[tagIndex % tagColors.length]} text-white font-bold text-sm`}
+                      >
+                        {tag}
+                      </span>
+                    );
+                  })}
                 </div>
                 <a 
                   href={project.link} 

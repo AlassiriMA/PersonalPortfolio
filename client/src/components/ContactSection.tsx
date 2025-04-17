@@ -2,8 +2,11 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import { useToast } from "@/hooks/use-toast";
 
 const ContactSection = () => {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,17 +21,43 @@ const ContactSection = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission logic would go here
-    console.log('Form submitted:', formData);
+    setIsSubmitting(true);
     
-    // Reset form after submission
-    setFormData({
-      name: '',
-      email: '',
-      message: ''
-    });
+    try {
+      const response = await fetch("https://formspree.io/f/mldjydvd", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      if (response.ok) {
+        toast({
+          title: "Message sent!",
+          description: "Thank you for your message. I'll get back to you soon.",
+        });
+        
+        // Reset form after submission
+        setFormData({
+          name: '',
+          email: '',
+          message: ''
+        });
+      } else {
+        throw new Error("Failed to submit form");
+      }
+    } catch (error) {
+      toast({
+        title: "Something went wrong",
+        description: "Your message couldn't be sent. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -109,8 +138,10 @@ const ContactSection = () => {
               </div>
               <Button 
                 type="submit" 
-                className="px-8 py-4 bg-black text-white font-bold hover:bg-gray-800 transition-colors transform hover:-translate-y-1 duration-200 w-full md:w-auto">
-                SEND MESSAGE
+                className="px-8 py-4 bg-black text-white font-bold hover:bg-gray-800 transition-colors transform hover:-translate-y-1 duration-200 w-full md:w-auto"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? 'SENDING...' : 'SEND MESSAGE'}
               </Button>
             </form>
           </div>

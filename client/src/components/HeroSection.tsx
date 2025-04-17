@@ -4,7 +4,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 py-16 md:py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1">
-            <div className="inline-block bg-black text-white px-3 py-1 mb-4 font-bold">MOHAMMAD A. ALASSIRI</div>
+            <div className="inline-block bg-black text-white px-3 py-1 mb-4 font-bold">FULL STACK DEVELOPER</div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               Crafting Smart<br/>
               <span className="relative">

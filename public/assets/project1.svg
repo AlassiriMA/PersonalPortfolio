@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="337" viewBox="0 0 600 337" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="337" fill="#000000"/>
+  <rect x="50" y="80" width="500" height="177" rx="5" fill="#1A1A1A"/>
+  <rect x="70" y="110" width="460" height="30" rx="3" fill="#333333"/>
+  <rect x="80" y="118" width="180" height="15" rx="2" fill="#666666"/>
+  <rect x="70" y="150" width="220" height="85" rx="3" fill="#333333"/>
+  <rect x="310" y="150" width="220" height="85" rx="3" fill="#333333"/>
+  <circle cx="100" cy="192" r="15" fill="#0CC0DF"/>
+  <rect x="150" y="175" width="120" height="10" rx="2" fill="#666666"/>
+  <rect x="150" y="195" width="90" height="10" rx="2" fill="#666666"/>
+  <rect x="150" y="215" width="70" height="10" rx="2" fill="#666666"/>
+  <circle cx="340" cy="192" r="15" fill="#FF4560"/>
+  <rect x="390" y="175" width="120" height="10" rx="2" fill="#666666"/>
+  <rect x="390" y="195" width="90" height="10" rx="2" fill="#666666"/>
+  <rect x="390" y="215" width="70" height="10" rx="2" fill="#666666"/>
+  <text x="300" y="270" font-family="monospace" font-size="24" text-anchor="middle" fill="white">TermPOS</text>
+  <text x="300" y="300" font-family="monospace" font-size="14" text-anchor="middle" fill="#CCCCCC">Terminal-based Point-of-Sale System</text>
+</svg>
