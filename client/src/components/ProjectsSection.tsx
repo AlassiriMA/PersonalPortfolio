@@ -60,7 +60,12 @@ const ProjectsSection = () => {
                 <img 
                   src={`/assets/project${index + 1}.svg`} 
                   alt={project.imageAlt} 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain bg-gradient-to-br from-gray-100 to-gray-200"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.onerror = null;
+                    target.src = "data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='337' viewBox='0 0 600 337' fill='none'%3E%3Crect width='600' height='337' fill='%23F3F4F6'/%3E%3Ctext x='300' y='168.5' font-family='system-ui' font-size='24' text-anchor='middle' fill='%236B7280'%3EProject ${index + 1}%3C/text%3E%3C/svg%3E";
+                  }}
                 />
                 <div className="absolute top-0 right-0 bg-gradient-to-r from-red-500 to-orange-500 text-white px-3 py-1 font-bold text-xs transform rotate-0 origin-top-right shadow-lg">FEATURED PROJECT</div>
               </div>
@@ -88,10 +93,10 @@ const ProjectsSection = () => {
                   href={project.link} 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="font-bold inline-flex items-center px-6 py-3 border-2 border-black bg-white hover:bg-black hover:text-white transition-colors"
+                  className="font-bold inline-flex items-center px-6 py-3 border-2 border-black bg-white hover:bg-gradient-to-r hover:from-blue-600 hover:to-indigo-600 hover:text-white transition-all transform hover:-translate-y-1 duration-300 shadow-md hover:shadow-lg"
                 >
                   VIEW PROJECT
-                  <ArrowRight className="h-5 w-5 ml-2" />
+                  <ArrowRight className="h-5 w-5 ml-2 group-hover:animate-pulse" />
                 </a>
               </div>
             </div>
@@ -103,10 +108,10 @@ const ProjectsSection = () => {
             href="https://alassiri.nl" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="inline-flex items-center justify-center bg-black text-white font-bold px-8 py-4 text-lg hover:bg-gray-800 transition-colors"
+            className="inline-flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-bold px-8 py-4 text-lg hover:from-purple-700 hover:to-indigo-700 transition-all transform hover:-translate-y-1 duration-300 shadow-lg rounded-sm"
           >
             VIEW ALL PROJECTS
-            <ArrowRight className="h-5 w-5 ml-2" />
+            <ArrowRight className="h-5 w-5 ml-2 animate-pulse" />
           </a>
         </div>
       </div>
