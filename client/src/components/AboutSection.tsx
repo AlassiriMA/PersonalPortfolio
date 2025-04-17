@@ -27,7 +27,7 @@ const AboutSection = () => {
             </a>
           </div>
           <div className="order-1 md:order-2 grid grid-cols-2 gap-4">
-            <div className="bg-accent aspect-square flex flex-col items-center justify-center p-4">
+            <div className="bg-accent aspect-square flex flex-col items-center justify-center p-4 border-l-4 border-blue-600 transition-all duration-300 hover:shadow-lg">
               <p className="font-bold text-center mb-2">EDUCATION</p>
               <ul className="text-sm text-center">
                 <li>Knowledge Engineering</li>
@@ -36,7 +36,7 @@ const AboutSection = () => {
                 <li>Tourism Management</li>
               </ul>
             </div>
-            <div className="bg-accent aspect-square flex flex-col items-center justify-center p-4">
+            <div className="bg-accent aspect-square flex flex-col items-center justify-center p-4 border-l-4 border-purple-600 transition-all duration-300 hover:shadow-lg">
               <p className="font-bold text-center mb-2">EXPERIENCE</p>
               <ul className="text-sm text-center">
                 <li>Operations Manager</li>
@@ -45,7 +45,7 @@ const AboutSection = () => {
                 <li>10+ Demo Applications</li>
               </ul>
             </div>
-            <div className="bg-accent aspect-square flex flex-col items-center justify-center p-4">
+            <div className="bg-accent aspect-square flex flex-col items-center justify-center p-4 border-l-4 border-emerald-600 transition-all duration-300 hover:shadow-lg">
               <p className="font-bold text-center mb-2">LANGUAGES</p>
               <ul className="text-sm text-center">
                 <li>English — Fluent</li>
@@ -53,7 +53,7 @@ const AboutSection = () => {
                 <li>Dutch — Conversational</li>
               </ul>
             </div>
-            <div className="bg-accent aspect-square flex flex-col items-center justify-center p-4">
+            <div className="bg-accent aspect-square flex flex-col items-center justify-center p-4 border-l-4 border-amber-600 transition-all duration-300 hover:shadow-lg">
               <p className="font-bold text-center mb-2">INTERESTS</p>
               <ul className="text-sm text-center">
                 <li>AI Agents</li>
