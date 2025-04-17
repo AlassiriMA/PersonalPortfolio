@@ -1,0 +1,92 @@
+Project Initialization & Base HTML/CSS Setup (React & Tailwind)
+
+Objective: Initialize a new React project with Tailwind CSS, establish the foundational HTML structure for a single-page landing page, and apply basic Tailwind CSS for the overall layout and Swiss-inspired styling.
+
+Project Setup:
+
+Create a new React project using create-react-app. Name the project "alassiri-landing".
+Install Tailwind CSS, following the official Tailwind CSS installation guide for Create React App. This typically involves:
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+Configuring tailwind.config.js
+Adding Tailwind directives to src/index.css
+HTML Structure:
+
+In src/App.js, replace the default content with the following:
+HTML
+
+    <div className="container">
+      <header className="header">
+        {/* Header content will go here */}
+      </header>
+      <main className="main">
+        <section id="hero" className="hero">
+          {/* Hero section content */}
+        </section>
+        <section id="about" className="about">
+          {/* About section content */}
+        </section>
+        <section id="skills" className="skills">
+          {/* Skills section content */}
+        </section>
+        <section id="projects" className="projects">
+          {/* Projects section content */}
+        </section>
+        <section id="contact" className="contact">
+          {/* Contact section (Get In Touch) */}
+        </section>
+      </main>
+      <footer className="footer">
+        {/* Footer content will go here */}
+      </footer>
+    </div>
+Base Tailwind CSS Styling:
+
+In src/index.css, add the base Tailwind directives and some basic styling:
+CSS
+
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    body {
+      font-family: 'Open Sans', sans-serif; /* Or another bold sans-serif font */
+      background-color: #fff; /* White background */
+      color: #000; /* Black text */
+      line-height: 1.6;
+    }
+
+    .container {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+    }
+
+    .header {
+      /* Header styles will be added later */
+    }
+
+    .main {
+      padding: 1.25rem; /* 20px */
+    }
+
+    section {
+      margin-bottom: 2.5rem; /* 40px */
+    }
+
+    .footer {
+      /* Footer styles will be added later */
+    }
+
+    /* Add more styles as needed */
+Font:
+Install the "Open Sans" font from Google Fonts. Include the <link> tag in the <head> section of your public/index.html file:
+HTML
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+Deliverables:
+Provide the complete src/App.js, src/index.css, and tailwind.config.js files.
+Confirm that the project is set up correctly, Tailwind CSS is working, and the basic layout is visible.
+Ensure the "Open Sans" font is correctly applied.
