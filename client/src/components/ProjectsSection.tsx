@@ -11,32 +11,32 @@ interface Project {
 const ProjectsSection = () => {
   const projects: Project[] = [
     {
-      title: "MINIMALIST DASHBOARD",
-      description: "A clean, Swiss-inspired admin interface with bold typography and intuitive navigation.",
-      tags: ["REACT", "TAILWIND", "UI DESIGN"],
-      imageAlt: "Minimalist Dashboard Project",
-      link: "#"
+      title: "📚 TermPOS",
+      description: "A terminal-based point-of-sale system for bookshops. Includes inventory, customer management, sales reports, and invoice printing.",
+      tags: ["Node.js", "SQLite", "CLI"],
+      imageAlt: "TermPOS Project",
+      link: "https://termpos.alassiri.nl"
     },
     {
-      title: "TYPOGRAPHY PORTFOLIO",
-      description: "A showcase of typographic experiments emphasizing Swiss design principles and grid layouts.",
-      tags: ["REACT", "CSS GRID", "TYPOGRAPHY"],
-      imageAlt: "Typography Portfolio Project",
-      link: "#"
+      title: "🍏 Green Market",
+      description: "A sleek e-commerce platform for selling fruits and vegetables. Responsive design, product filtering, shopping cart, and checkout flow.",
+      tags: ["React", "Express", "PostgreSQL"],
+      imageAlt: "Green Market E-Commerce App",
+      link: "https://greens.alassiri.nl"
     },
     {
-      title: "E-COMMERCE CONCEPT",
-      description: "A minimalist shopping experience with focus on typography and product presentation.",
-      tags: ["REACT", "TAILWIND", "UX DESIGN"],
-      imageAlt: "E-Commerce Concept Project",
-      link: "#"
+      title: "📈 Social Media Manager",
+      description: "An automation tool that helps businesses manage, schedule, and generate content for multiple social media platforms using AI prompts.",
+      tags: ["Node.js", "React", "OpenAI"],
+      imageAlt: "Social Media Manager SaaS",
+      link: "https://social.alassiri.nl"
     },
     {
-      title: "EDITORIAL WEBSITE",
-      description: "A magazine-inspired web experience with strong grid layout and typographic hierarchy.",
-      tags: ["REACT", "GRID", "EDITORIAL"],
-      imageAlt: "Editorial Website Project",
-      link: "#"
+      title: "🤖 DeFi Trading Bot",
+      description: "A crypto bot that identifies cointegrated trading pairs and executes arbitrage strategies. Real-time alerts via Telegram.",
+      tags: ["Python", "Docker", "APIs"],
+      imageAlt: "DeFi Trading Bot",
+      link: "https://defi.alassiri.nl"
     }
   ];
 

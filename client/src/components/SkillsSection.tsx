@@ -4,25 +4,25 @@ interface Skill {
 }
 
 const SkillsSection = () => {
-  const designSkills: Skill[] = [
-    { name: "UI/UX DESIGN", level: 4 },
-    { name: "TYPOGRAPHY", level: 4 },
-    { name: "FIGMA", level: 3 },
-    { name: "VISUAL DESIGN", level: 3.5 }
-  ];
-
   const frontendSkills: Skill[] = [
     { name: "REACT", level: 4 },
-    { name: "TAILWIND CSS", level: 4 },
-    { name: "JAVASCRIPT", level: 3.5 },
+    { name: "JAVASCRIPT", level: 4 },
+    { name: "TYPESCRIPT", level: 3.5 },
     { name: "HTML/CSS", level: 4 }
   ];
 
+  const backendSkills: Skill[] = [
+    { name: "NODE.JS", level: 4 },
+    { name: "EXPRESS", level: 4 },
+    { name: "POSTGRESQL", level: 3.5 },
+    { name: "API DESIGN", level: 4 }
+  ];
+
   const otherSkills: Skill[] = [
-    { name: "GIT/GITHUB", level: 3.5 },
-    { name: "RESPONSIVE DESIGN", level: 4 },
-    { name: "PERFORMANCE", level: 3 },
-    { name: "ACCESSIBILITY", level: 2.5 }
+    { name: "CLOUD DEPLOYMENT", level: 3.5 },
+    { name: "DOCKER", level: 3 },
+    { name: "PYTHON", level: 3 },
+    { name: "GIT/GITHUB", level: 4 }
   ];
 
   // Convert skill level to width class
@@ -38,11 +38,11 @@ const SkillsSection = () => {
         <h2 className="section-title text-4xl md:text-5xl font-bold">SKILLS</h2>
         
         <div className="grid md:grid-cols-3 gap-8">
-          {/* Design Skills */}
+          {/* Backend Skills */}
           <div className="bg-white border-2 border-black p-8">
-            <h3 className="text-2xl font-bold mb-6">DESIGN</h3>
+            <h3 className="text-2xl font-bold mb-6">BACKEND</h3>
             <ul className="space-y-4">
-              {designSkills.map((skill, index) => (
+              {backendSkills.map((skill, index) => (
                 <li key={index} className="flex justify-between items-center">
                   <span className="font-bold">{skill.name}</span>
                   <div 

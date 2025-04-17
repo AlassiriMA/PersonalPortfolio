@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <a href="#" className="text-2xl font-bold">ALASSIRI</a>
+            <a href="#" className="text-2xl font-bold">Mohammad A. Alassiri</a>
           </div>
           
           <nav className="mb-6 md:mb-0">

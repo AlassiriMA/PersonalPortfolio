@@ -45,18 +45,21 @@ const ContactSection = () => {
             <div className="space-y-6 mb-8">
               <div>
                 <h3 className="font-bold text-xl mb-2">EMAIL</h3>
-                <a href="mailto:hello@alassiri.com" className="hover:underline">hello@alassiri.com</a>
+                <a href="mailto:me@alassiri.nl" className="hover:underline">me@alassiri.nl</a>
               </div>
               <div>
-                <h3 className="font-bold text-xl mb-2">LOCATION</h3>
-                <p>Zurich, Switzerland</p>
+                <h3 className="font-bold text-xl mb-2">PHONE</h3>
+                <a href="tel:+31610979730" className="hover:underline">+316 1097 9730</a>
+              </div>
+              <div>
+                <h3 className="font-bold text-xl mb-2">WEBSITE</h3>
+                <a href="https://alassiri.nl" target="_blank" rel="noopener noreferrer" className="hover:underline">alassiri.nl</a>
               </div>
               <div>
                 <h3 className="font-bold text-xl mb-2">SOCIAL</h3>
                 <div className="flex gap-4">
-                  <a href="#" className="hover:underline font-bold">LINKEDIN</a>
-                  <a href="#" className="hover:underline font-bold">GITHUB</a>
-                  <a href="#" className="hover:underline font-bold">TWITTER</a>
+                  <a href="https://linkedin.com/in/mak-alassiri" target="_blank" rel="noopener noreferrer" className="hover:underline font-bold">LINKEDIN</a>
+                  <a href="https://github.com/AlassiriMA" target="_blank" rel="noopener noreferrer" className="hover:underline font-bold">GITHUB</a>
                 </div>
               </div>
             </div>

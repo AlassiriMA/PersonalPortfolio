@@ -4,8 +4,8 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 py-16 md:py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">BOLD<br/>DESIGN.<br/>CLEAN CODE.</h1>
-            <p className="text-xl mb-8 max-w-md">Crafting minimalist digital experiences with Swiss precision and modern technology.</p>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">Crafting Smart<br/>Digital Solutions<br/>with Code, Strategy & Precision</h1>
+            <p className="text-xl mb-8 max-w-md">From full-stack apps to automated ops — I build, launch, and scale ideas that work.</p>
             <div className="flex flex-wrap gap-4">
               <a href="#projects" className="px-8 py-3 bg-black text-white font-bold hover:bg-gray-800 transition-colors">VIEW WORK</a>
               <a href="#contact" className="px-8 py-3 border-2 border-black font-bold hover:bg-gray-100 transition-colors">GET IN TOUCH</a>

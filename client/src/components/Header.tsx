@@ -11,7 +11,7 @@ const Header: FC<HeaderProps> = ({ isMenuOpen, toggleMenu, closeMenu }) => {
     <header className="sticky top-0 z-50 bg-white border-b border-black">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center">
-          <a href="#" className="text-2xl font-bold">ALASSIRI</a>
+          <a href="#" className="text-2xl font-bold">Mohammad A. Alassiri</a>
         </div>
         
         {/* Desktop Navigation */}
