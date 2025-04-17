@@ -15,7 +15,7 @@ const AboutSection = () => {
             <p className="text-lg mb-8">
               Currently exploring cloud automation, AI integration, and DeFi trading technologies to build intelligent, scalable systems.
             </p>
-            <a href="/assets/cv_placeholder.txt" download="Mohammad_Alassiri_CV.pdf" className="px-8 py-3 bg-black text-white font-bold inline-block hover:bg-gray-800 transition-colors">DOWNLOAD CV</a>
+            <a href="/assets/alassiri_cv.pdf" download="Mohammad_Alassiri_CV.pdf" className="px-8 py-3 bg-black text-white font-bold inline-block hover:bg-gray-800 transition-colors">DOWNLOAD CV</a>
           </div>
           <div className="order-1 md:order-2 grid grid-cols-2 gap-4">
             <div className="bg-accent aspect-square flex flex-col items-center justify-center p-4">
